@@ -228,6 +228,11 @@ a {
   justify-content: flex-end;
   margin-right: 2rem;
 }
+
+/*=======================Footer */
+.footer {
+  text-align: center;
+}
 /** ==================== MQ OF NAVBAR ==================== */
 @media (max-width: 534px) {
   .navMain ul {
@@ -235,12 +240,10 @@ a {
     flex-direction: column;
     padding: 1rem;
     align-items: center;
-    border: 1px solid red;
   }
   .navMain a {
     padding: 0;
     margin: 10rem;
-    border: 1px solid red;
   }
 
   .navMain li:hover {
