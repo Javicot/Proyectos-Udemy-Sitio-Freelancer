@@ -28,10 +28,15 @@ body {
 }
 ul {
   list-style: none;
+  display: inline;
+}
+li {
+  display: inline;
 }
 a {
   text-decoration: none;
 }
+/** ==================== CSS ==================== */
 .titulo {
   text-align: center;
   font-size: 3.8rem;
@@ -39,3 +44,51 @@ a {
 .titulo span {
   font-size: 2rem;
 }
+
+.nB {
+  background-color: #0097a7;
+}
+
+.navMain ul {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.navMain a {
+  color: var(--blanco);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.navMain a:hover {
+  background-color: var(--primario);
+  color: var(--oscuro);
+}
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/** ==================== MQ OF NAVBAR ==================== */
+@media (max-width: 534px) {
+  .navMain ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+  .navMain a {
+    padding: 0;
+    margin: 10rem;
+  }
+
+  .navMain li:hover {
+    background-color: var(--primario);
+    width: 100%;
+    text-align: center;
+  }
+}
+/* .x input {
+  display: block;
+} */
+/*para el formulario*/
